@@ -21,13 +21,13 @@ public class TaskController {
     @PutMapping("/tag")
     @ResponseStatus(HttpStatus.CREATED)
     @Transactional
-    public Task setTag(@RequestBody TaskTo taskTo, @RequestParam String tag){
+    public Task setTag(@RequestBody TaskTo taskTo, @RequestParam String tag) {
         return taskService.setTag(taskTo, tag);
     }
 
     @DeleteMapping("/tag")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void deleteTag(@RequestBody TaskTo taskTo, @RequestParam String tag){
+    public void deleteTag(@RequestBody TaskTo taskTo, @RequestParam String tag) {
         taskService.deleteTag(taskTo, tag);
     }
 }
