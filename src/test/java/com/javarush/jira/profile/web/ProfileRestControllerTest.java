@@ -46,7 +46,7 @@ class ProfileRestControllerTest extends AbstractControllerTest {
 
     @Test
     @WithUserDetails(value = USER_MAIL)
-    void update() throws Exception{
+    void update() throws Exception {
         ProfileTo updatedProfileTo = profileMapper.toTo(getUpdatedProfile());
         perform(MockMvcRequestBuilders.put(REST_URL)
                 .content(JsonUtil.writeValue(updatedProfileTo))

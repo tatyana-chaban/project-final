@@ -12,7 +12,7 @@ public class ProfileTestData {
     public static final long UPDATED_MAIL_NOTIFICATIONS = 0L;
     public static final ProfileTo profileTo = new ProfileTo(1L, null, null);
 
-    public static Profile getUpdatedProfile(){
+    public static Profile getUpdatedProfile() {
         Profile profile = new Profile(ID);
         profile.setMailNotifications(UPDATED_MAIL_NOTIFICATIONS);
         return profile;
