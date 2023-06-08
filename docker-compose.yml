@@ -44,4 +44,4 @@ services:
       - POSTGRES_PASSWORD=JiraRush
       - POSTGRES_DB=jira
       - PGDATA=/var/lib/postgresql/data/pgdata
-      
+
